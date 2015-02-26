@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	header
+		#header-left
+			div.button
+				img(src="images/home.png")
+		form#search-form
+			#header-input
+				input(id="searchbar", type="text", placeholder="search")
+			#header-right
+				div.button(onclick="search")
+					img(src="images/search.png")
+	#main
+		#content
+			h1 Welcome to the Wiki
+			h2 What is the wiki?
+			p This wiki uses all data from Wikipedia and displays it in a very readable format.

@@ -1,0 +1,108 @@
+body {
+  padding: 0 20px;
+  margin: 0;
+  background: #fff;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+div{
+	margin: 0;
+	padding: 0;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	background: #fff;
+	padding: 0;
+	border-bottom: 1px solid #d0d0d0;
+	z-index: 999;
+}
+#header-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #d0d0d0;
+}
+#header-input{
+	position: absolute;
+	top: 0;
+	left: 60px;
+	height: 60px;
+	right: 60px;
+	margin: 0;
+	padding: 0;
+}
+#header-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	width: 60px;
+	border-left: 1px solid #d0d0d0;
+}
+.button{
+	height: 60px;
+	width: 60px;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.button img{
+	margin: 17px;
+	padding: 0;
+	height: 26px;
+	width: 26px;
+	pointer-events: none;
+}
+#searchbar{
+	height: 48px;
+	padding-left: 12px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+	font-size: 1.2em;
+	color: #444;
+	border: none;
+	border-radius: 2px;
+}
+#searchbar:hover{
+	border: none;
+}
+#searchbar:focus{
+	border: none;
+	outline: 0;
+}
+#main{
+	margin: 100px 0;
+}
+#content{
+	margin: 0 auto;
+	max-width: 650px;
+	color: #444;
+	line-height: 1.5em;
+}
+h2{
+	margin: 20px 0 8px 0;
+	padding: 0;
+	line-height: 1.1em;
+}
+h1{
+	line-height: 1.1em;
+	border-bottom: 1px solid #d0d0d0;
+}
+.article-head:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
