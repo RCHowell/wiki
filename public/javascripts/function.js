@@ -24,14 +24,21 @@ function search(){
 	});
 }
 function getWiki(query){
-	var url = "http://en.wikipedia.org/w/api.php?format=json&action=query&titles=" + query + "&prop=revisions&rvprop=content&rvparse&callback=?";
-	$('#content').html('');
-	$.getJSON(url, function(data){
-		var id = first(data.query.pages);
-		console.log(data.query.pages[id]);
-		$('#content').append("<h1>" + data.query.pages[id].title + "</h2");
-		$('#content').append(data.query.pages[id].revisions[0]['*']);
-	});
+	console.log(query);
+	if(query != 'undefined'){
+		var url = "http://en.wikipedia.org/w/api.php?format=json&action=query&titles=" + query + "&prop=revisions&rvprop=content&rvparse&callback=?";
+		$('#content').html('');
+		$.getJSON(url, function(data){
+			var id = first(data.query.pages);
+			console.log(data.query.pages[id]);
+			$('#content').append("<h1>" + data.query.pages[id].title + "</h2");
+			$('#content').append(data.query.pages[id].revisions[0]['*']);
+		});
+	}
+}
+
+function redirect(query){
+	window.location = '/wiki/' + query
 }
 
 function first(obj){

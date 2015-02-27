@@ -13,6 +13,7 @@ block content
 					img(src="/images/search.png")
 	#main
 		#content
-			h1 Welcome to the Wiki
-			h2 What is the wiki?
-			p This wiki uses all data from Wikipedia and displays it in a very readable format.
+	script.
+		$(document).ready(function(){
+			getWiki('#{title}');
+		});

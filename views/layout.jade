@@ -3,12 +3,13 @@ html
 	head
 		title= title
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='icon', href='/images/favicon.png', type="image/png")
 		script(src="//code.jquery.com/jquery-1.11.2.min.js")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
-		script(src="javascripts/function.js")
-		script(src="javascripts/handlebars.js")
+		script(src="/javascripts/function.js")
+		script(src="/javascripts/handlebars.js")
 	body
 		block content
 		script(id="listing", type="text/x-handlebars-template")
-			h2.article-head(onclick="getWiki('{{title}}')")
+			a.article-head(href="/wiki/{{title}}")
 				| {{title}}
